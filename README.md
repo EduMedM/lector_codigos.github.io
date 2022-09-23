@@ -1,1 +1,1 @@
-# lector_codigos.github.io
+# Lector de Códigos de Barra
