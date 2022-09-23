@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Code Lens</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+		
+		<div class="header-container">
+      <div class="backbutton-container" onclick="backToHome()">
+        <img src="./images/161-trending-flat-outline.png" alt="Back" id="icon" class="back-buttom">
+      </div>
+      <div class="title-container">
+        <strong>¡Escanea y Listo!</strong>
+      </div>
+      <div class="cart-container" onclick="buy()">
+        <img src="./images/6-shopping-outline.png" alt="Cart" id="icon">
+      </div>
+    </div>
+
+  
+    <div class="reader-container">
+      <div id="contenedor"></div>
+      <!-- Cargamos Quagga y luego nuestro script -->
+      <script src="https://unpkg.com/quagga@0.12.1/dist/quagga.min.js"></script>
+      <script src="script.js"></script>
+    </div>
+
+    <div class="reader-result">
+      <p id="resultado"></p>
+    </div>
+
+    <div class="code-container">
+      <input type="number" id="name" name="name" required minlength="10" maxlength="20" size="20" class="code-input" id="code-input">
+      <div type="button" value="" class="code-buttom" onClick="codeInput()">Buscar</div>
+    </div>
+
+    <div class="list-header">
+      <div class="list-title">Imagen</div>
+      <div class="list-title">Nombre</div>
+      <div class="list-title">Cantidad</div>
+      <div class="list-title">Precio</div>
+    </div>
+    <hr>
+
+    <div class="total-containerBig">
+      <div class="total-container">
+        <div class="total-img-container">
+          <img src="./images/Puntodeventa.png" alt="" class="total-img">
+        </div>
+        <h2 class="total-title">Total a pagar</h2>
+        <h1 class="total-price">0.00$</h1>
+        <h2 class="total-buttom">Pagar</h2>
+        <div class="exit-img-container">
+          <img src="./images/back.svg" alt="" class="exit-img" onclick="closeCart()">
+        </div>
+      </div>
+    </div>
+
+    <div id="products-container">
+      <div id="product0" class="0"></div>
+
+    
+  </body>
+</html>

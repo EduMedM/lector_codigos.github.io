@@ -1,0 +1,29 @@
+{
+    "products" : [
+        {
+            "code" : "7591473000015",
+            "name" : "Arroz Mary 1kg",
+            "price" : 2.80
+        },
+        {
+            "code" : "7590006200137",
+            "name" : "Margarina 500g",
+            "price" : 3.40
+        },
+        {
+            "code" : "7591002000011",
+            "name" : "Harina Pan 1kg",
+            "price" : 2.35
+        },
+        {
+            "code" : "5901234123457",
+            "name" : "Detergente Ace 1kg",
+            "price" : 10.99
+        },   
+        {
+            "code" : "7591060510248",
+            "name" : "Cafe America 250g",
+            "price" : 1.95
+        }   
+    ]
+}

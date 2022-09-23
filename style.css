@@ -1,0 +1,201 @@
+body{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#contenedor video{
+	max-width: 100%;
+	width: 100%;
+}
+#contenedor{
+	max-width: 100%;
+	position:relative;
+}
+canvas{
+	max-width: 100%;
+}
+canvas.drawingBuffer{
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+
+.header-container{
+	max-width: 100%;
+	margin: 5px 10px 5px 10px;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 0.5fr 10fr 0.5fr;
+}
+
+.title-container{
+	text-align: center;
+	margin: 15px;
+}
+
+#icon{
+	height: 40px;
+	margin: auto;
+	margin-top: 5px;
+
+}
+
+.back-buttom{
+	transform: scaleX(-1);
+}
+
+.reader-result{
+	text-align: center;
+}
+
+/*Productos en lista*/
+
+.list-item{
+	max-width: 100%;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 0.6fr 1.4fr 0.6fr 0.6fr;
+	border: 1px solid;
+	border-radius: 10px;
+	
+}
+
+.item-img{
+	width: 50px;
+}
+
+.buttom-img{
+	width: 20px;
+	background-color: black;
+	border-radius: 50px;
+	margin-right: 5px;
+	margin-top: 23px;
+	
+}
+
+.item-quantity{
+	margin-left: 10px;
+	font-weight: 700;
+}
+
+.product-quantity{
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: auto;
+	margin-left: -2px;
+}
+
+.product-price{
+	background-color: black;
+	color: white;
+	text-align: center;
+	border-radius: 0px 10px 10px 0px;
+}
+
+.product-img{
+	margin: auto;
+}
+
+.product-title{
+	margin-top: 5px;
+}
+
+.item-container{
+	margin-bottom: 10px;
+}
+
+/*Input para codigos de barra escritos manualmente*/
+.code-container{
+	width: 100%;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 1fr 1fr;
+	
+}
+
+.code-input{
+	width: 200px;
+	height: 30px;
+	margin: 20px;
+	border-radius: 5px;
+}
+
+.code-buttom{
+	width: 80%;
+	height: 36px;
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+/*Cabecera de lista de productos*/
+.list-header{
+	display: grid;
+	grid-auto-flow: column;	
+	grid-template-columns: 0.6fr 1.4fr 0.6fr 0.6fr;
+	text-align: left;
+	gap: 20px;
+}
+
+/*Modal de total a pagar*/
+.total-containerBig{
+	position: fixed;
+    opacity: 0;
+    top: 1;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;	
+	margin-left: -9px;
+	margin-top: 10000px;
+}
+
+.total-container{
+	width: 200;
+    height: 500px;
+    border-radius: 10px;
+    margin: 50px;
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.show-total-containerBig{
+    opacity: 1;
+    top: 0;
+	margin-top: 0px;
+}
+
+.total-price{
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+
+.total-buttom{
+	background-color: rgba(0, 0, 0, 1);
+	width: 100px;
+	margin: 20px auto;
+	text-align: center;
+	padding: 5px 5px 10px 5px;
+	border-radius: 10px;
+	color: #fff;
+	
+}
+
+.total-img{
+	width: 200px;
+}
+
+.exit-img{
+	width: 50px;
+}
+
+

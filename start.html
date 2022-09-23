@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Code Lens</title>
+  </head>
+  <body>
+    <div class="header-container">
+      <div class="title-container">
+        <h3 class="title-paragraph">¡Escanea y Listo!</h3>
+      </div>
+      <div class ="Simagen">
+        <img src="./images/Scanner.jpg" class="imagen">
+      </div>
+      <div class="rules">
+        <p class="prules">1. Escanea o ingresa manualmente el codigo de tu producto</p>
+        <p class="prules">2. Aumenta y reduce la cantidad de cada producto </p>
+        <p class="prules">3. Seleccione el botón superior derecho para ver el monto total y pagar </hp3>
+      </div>
+      <div class="button-container">
+          <h3 class="button" OnClick="startScanner()">Comenzar</h3>
+      </div>
+  </div>
+  </body>
+</html>
+<style>
+  
+  body{
+	  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .imagen{
+    width: 250px;
+    margin: auto;
+  }
+  .button{
+    text-decoration: none;
+    background-color: black;
+    color: #FFF;
+    padding: 10px 5px 15px 5px;
+    width: 130px;
+    margin:  10px auto auto auto;
+    border-radius: 20px;
+  }
+  .prules{
+    margin-top: 20px;
+    text-align: left;
+  }
+  .rules{
+    padding: 20px;
+  }
+  .title-container{
+    margin: auto;
+  }
+  .header-container{
+    text-align: center;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: max-content;
+
+  }
+  
+</style>
+<script>
+    function startScanner(){
+    window.open("index.html","_self");
+}
+</script>
